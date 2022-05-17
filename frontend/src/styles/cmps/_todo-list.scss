@@ -1,0 +1,19 @@
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+    margin: 30px auto;
+    .todo-preview {
+        @include fc(space-between);
+        border-bottom: 1px solid lightgray;
+        padding:4px;
+
+        span{
+            cursor: pointer;
+            &.done {
+                text-decoration: line-through;
+            }
+        }
+    }
+}

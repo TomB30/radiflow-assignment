@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: $clr-black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    margin:0 4px;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    padding: 4px 8px;
+    border-radius: 3px;
+    transition: background-color .3s;
+    &.failure {
+        background-color: $clr-failure;
+        color: white;
+        &:hover {
+            background-color: $clr-failureh;
+        }
+    }
+    &.primary {
+        background-color: $clr-primary;
+        color: white;
+        &:hover {
+            background-color: $clr-primaryh;
+        }
+    }
+}
+
+.home-page {
+    padding: 20px;
+    button {
+        margin: 20px;
+    }
+}
+
+.about-page {
+    padding: 20px;
+    a {
+        color: #2285db;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.app-header {
+    @include fc(space-between,center);
+    background-color: #020A19;
+    color: white ;
+
+    .logo-wrapper {
+        width: 200px;
+    }
+
+    nav {
+        display: flex;
+    }
+    a {
+        padding: 10px 16px;
+        margin: 0 4px;
+        border-radius: 3px;
+        transition: background-color .2s;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.397);
+        }
+        
+        &.active{
+            background-color: rgba(255, 255, 255, 0.397);
+        }
+    }
+}
